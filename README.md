@@ -1,16 +1,33 @@
-# React + Vite
+# Portfolio Profissional - Geandre Alfaia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu portfólio pessoal focado em **Logística, Automação e Desenvolvimento Full-Stack**. O projeto foi construído com uma arquitetura moderna, priorizando performance, responsividade e uma experiência de usuário (UX) fluida.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **React + Vite:** Para uma interface rápida e reativa.
+* **Tailwind CSS:** Estilização utilitária com foco em Dark Mode e Design Moderno.
+* **Formspree:** Integração de backend para processamento de formulários sem servidor.
+* **Vercel:** Deploy contínuo e hospedagem escalável.
+* **Lucide React:** Conjunto de ícones minimalistas e consistentes.
 
-## React Compiler
+## 🧠 Desenvolvimento Assistido (Gemini AI)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este projeto contou com o suporte da **IA Gemini 3 Flash (Google)** como parceira de desenvolvimento ("Pair Programming"). O uso da inteligência artificial foi fundamental para:
 
-## Expanding the ESLint configuration
+1.  **Refatoração de Código:** Otimização de componentes React para melhor legibilidade e manutenção.
+2.  **Solução de Bugs:** Identificação rápida e correção de erros de build na Vercel (como problemas de sensibilidade a maiúsculas/minúsculas em imports).
+3.  **Modernização de UI:** Implementação de conceitos avançados como *Glassmorphism* na Navbar e micro-interações de flutuação nos cards de projetos.
+4.  **Configuração de Domínio:** Suporte técnico para a propagação correta do DNS e integração com o Registro.br.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Funcionalidades
+
+- [x] **Dark/Light Mode:** Suporte nativo a temas baseado na preferência do usuário.
+- [x] **Formulário Funcional:** Integração real para recebimento de leads/contatos via e-mail.
+- [x] **Design Responsivo:** Adaptado perfeitamente para dispositivos móveis e desktop.
+- [x] **Domínio Próprio:** Configurado para acesso profissional via `geandrealfaia.com.br`.
+
+## 📦 Como rodar o projeto localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/geandreac/nome-do-repositorio.git](https://github.com/geandreac/nome-do-repositorio.git)

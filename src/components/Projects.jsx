@@ -28,10 +28,10 @@ export default function Projects() {
       detail: "Otimização de performance em requisições e normalização de payloads externos."
     },
     { 
-      title: "SGBD Acadêmico Estruturado", 
+      title: "Sistema Prisional", 
       icon: <Database />, 
       sub: "Modelagem de Dados & Compliance", 
-      desc: "Engenharia de banco de dados para sistema prisional. Foco absoluto em Normalização (3FN), integridade referencial e auditoria de registros.",
+      desc: "Engenharia de banco de dados acadêmico para sistema prisional. Foco absoluto em Normalização (3FN), integridade referencial e auditoria de registros.",
       tech: ["SQL Server", "Relational Modeling", "Joins", "Data Integrity"],
       detail: "Estruturação de consultas complexas e automação de fluxos via triggers/procedures."
     }
@@ -50,7 +50,8 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* PROJETO DESTAQUE: LOGÍSTICA CORPORATIVA */}
-          <div className="md:col-span-2 bg-gray-50 dark:bg-[#121212] rounded-3xl border border-primary/20 overflow-hidden shadow-xl hover:shadow-primary/10 transition-all">
+          {/* ADICIONADO AQUI: Efeito de flutuação e cursor-pointer */}
+          <div className="md:col-span-2 bg-gray-50 dark:bg-[#121212] rounded-3xl border border-primary/20 overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 cursor-pointer">
             <div className="grid grid-cols-1 lg:grid-cols-5">
               <div className="lg:col-span-2 bg-primary p-10 flex flex-col justify-center text-white relative">
                 <div className="relative z-10">
@@ -100,9 +101,9 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* DEMAIS PROJETOS - REFINADOS */}
+         {/* DEMAIS PROJETOS - REFINADOS */}
           {otherProjects.map((p, i) => (
-            <div key={i} className="bg-gray-50 dark:bg-[#121212] p-8 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-primary/40 transition-all flex flex-col group">
+            <div key={i} className="bg-gray-50 dark:bg-[#121212] p-8 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-primary/40 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col group cursor-pointer">
                <div className="flex items-center gap-4 mb-6">
                   <div className="text-primary p-3 bg-white dark:bg-[#1a1a1a] rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
                     {p.icon}

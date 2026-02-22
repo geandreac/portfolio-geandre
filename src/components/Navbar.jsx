@@ -13,7 +13,7 @@ export default function Navbar({ theme, toggleTheme }) {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 dark:bg-[#121212]/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+    <nav className="fixed w-full top-0 z-50 bg-white/80 dark:bg-[#121212]/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#" className="text-2xl font-bold tracking-tighter dark:text-white">
           GEANDRE<span className="text-primary">.</span>
