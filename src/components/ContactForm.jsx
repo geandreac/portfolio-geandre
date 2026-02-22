@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <section id="contato" className="py-20 bg-white dark:bg-[#121212] transition-colors">
+    <section id="contato" className="py-20 bg-gray-50 dark:bg-[#0a0a0a] transition-colors">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Vamos Conversar?</h2>
