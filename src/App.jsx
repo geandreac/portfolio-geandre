@@ -5,7 +5,6 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import ProfessionalProfile from './components/ProfessionalProfile';
 import ContactForm from './components/ContactForm';
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
-        <ProfessionalProfile />
         <ContactForm />
       </main>
 
