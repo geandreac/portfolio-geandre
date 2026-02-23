@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Força o scroll suave globalmente fora das camadas do Tailwind */
+html {
+  scroll-behavior: smooth !important;
+}
+
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   body {
     @apply antialiased transition-colors duration-300;
   }
