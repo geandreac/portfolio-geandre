@@ -2,7 +2,7 @@
 
 > 🌐 Acesse ao vivo: [geandrealfaia.com.br](https://geandrealfaia.com.br)
 
-Este é o meu portfólio pessoal focado em **Logística, Automação e Desenvolvimento Full-Stack**. O projeto foi construído com uma arquitetura moderna, priorizando performance, responsividade e uma experiência de usuário (UX) fluida.
+Este é o meu portfólio pessoal focado em **Automação e Desenvolvimento Full-Stack**. O projeto foi construído com uma arquitetura moderna, priorizando performance, responsividade e uma experiência de usuário (UX) fluida.
 
 ## 🚀 Tecnologias Utilizadas
 
