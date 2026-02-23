@@ -26,7 +26,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experiencia" className="py-20 px-6 max-w-5xl mx-auto">
+    <section id="experiencia" data-aos="fade-up" className="py-20 px-6 max-w-5xl mx-auto">
       <h2 className="text-3xl font-bold mb-12 text-gray-900 dark:text-white border-b-2 border-primary pb-2 inline-block">Trajetória Profissional</h2>
       <div className="space-y-12">
         {experiences.map((exp, index) => (

@@ -38,7 +38,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projetos" className="py-20 bg-white dark:bg-[#1a1a1a] transition-colors border-t border-gray-200 dark:border-gray-800">
+    <section id="projetos" data-aos="fade-up" className="py-20 bg-white dark:bg-[#1a1a1a] transition-colors border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white border-b-2 border-primary pb-2 inline-block">Projetos de Tecnologia</h2>

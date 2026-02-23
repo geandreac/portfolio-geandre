@@ -9,7 +9,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="habilidades" className="py-20 px-6 max-w-6xl mx-auto">
+    <section id="habilidades" data-aos="zoom-in" className="py-20 px-6 max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-10 text-gray-900 dark:text-white border-b-2 border-primary pb-2 inline-block">Competências Técnicas</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((cat, idx) => (

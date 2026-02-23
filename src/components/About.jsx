@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section id="sobre" className="py-20 bg-white dark:bg-[#1a1a1a] transition-colors duration-300 border-t border-gray-200 dark:border-gray-800">
+    <section id="sobre" data-aos="fade-up" className="py-20 bg-white dark:bg-[#1a1a1a] transition-colors duration-300 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white border-b-2 border-primary pb-2 inline-block">Sobre Mim</h2>
         <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
