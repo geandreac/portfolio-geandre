@@ -51,7 +51,7 @@ function App() {
 
       {/* Botão Flutuante do WhatsApp */}
       <a 
-        href="https://wa.me/5592992610077" 
+        href="https://api.whatsapp.com/send?phone=5592992610077&text=Bom+dia%2C+tudo+bem%3F+Gostaria+de+fazer+um+%2Aor%C3%A7amento%2A.+%F0%9F%98%81" 
         target="_blank" 
         rel="noreferrer"
         className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 hover:shadow-2xl transition-transform duration-300 z-50 flex items-center justify-center"
