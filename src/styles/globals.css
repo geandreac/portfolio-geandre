@@ -1,8 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/jetbrains-mono-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/jetbrains-mono-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'JetBrains Mono', monospace !important;
+  }
+}
 
 * { 
   box-sizing: border-box; 
@@ -12,10 +32,6 @@
 
 html { 
   scroll-behavior: smooth; 
-}
-
-body, h1, h2, h3, h4, h5, h6, button, input, select, textarea { 
-  font-family: 'JetBrains Mono', monospace !important; 
 }
 
 body { 

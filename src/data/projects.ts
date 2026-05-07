@@ -27,13 +27,6 @@ export const smallProjects = [
     linkLabel: 'Github <~>',
   },
   {
-    name: 'Portfolio v1',
-    stack: ['React', 'TypeScript'],
-    desc: 'Primeira versão do portfólio pessoal com foco em apresentação de projetos e skills.',
-    link: 'https://github.com/geandreac/portfolio-geandre-old', // Supondo que o v1 esteja em outro lugar ou renomeado
-    linkLabel: 'Github <~>',
-  },
-  {
     name: 'Scripts de Automação',
     stack: ['Python', 'MSAL', 'OAuth 2.0'],
     desc: 'Conjunto de scripts Python para sincronização e automação de dados corporativos. Funcionam como complemento direto aos projetos principais (Controle de Entregas e automações de backoffice), com autenticação segura via MSAL.',

@@ -39,7 +39,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="flex-1">
         <h3 className="font-bold text-lg text-text mb-1 group-hover:text-purple transition-colors duration-300">{name}</h3>
         {note && <p className="text-xs text-purple/80 italic mb-3">{note}</p>}
-        <p className="text-sm text-muted leading-relaxed line-clamp-4">{desc}</p>
+        <p className="text-sm text-muted leading-relaxed">{desc}</p>
       </div>
       
       <div className="flex flex-wrap gap-3 mt-2">
