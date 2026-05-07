@@ -20,10 +20,17 @@ export const completeApps = [
 
 export const smallProjects = [
   {
+    name: 'Portfolio v2.0',
+    stack: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
+    desc: 'Minha vitrine pessoal atualizada. Design premium com glassmorphism, performance extrema e foco total em UX/UI moderna.',
+    link: 'https://github.com/geandreac/portfolio-geandre',
+    linkLabel: 'Github <~>',
+  },
+  {
     name: 'Portfolio v1',
     stack: ['React', 'TypeScript'],
     desc: 'Primeira versão do portfólio pessoal com foco em apresentação de projetos e skills.',
-    link: 'https://github.com/geandreac/portfolio-geandre',
+    link: 'https://github.com/geandreac/portfolio-geandre-old', // Supondo que o v1 esteja em outro lugar ou renomeado
     linkLabel: 'Github <~>',
   },
   {
