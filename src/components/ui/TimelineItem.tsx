@@ -21,7 +21,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
       }}
       className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-6 md:gap-12 py-8 border-t border-white/5 last:border-b group"
     >
-      <div className="text-sm text-muted font-medium pt-[2px] font-outfit">
+      <div className="text-sm text-muted font-medium pt-[2px]">
         {period} — {isCurrent ? (
           <motion.span
             animate={{ opacity: [1, 0.4, 1] }}
@@ -39,7 +39,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
       </div>
       
       <div className="relative">
-        <h4 className="text-purple font-bold text-lg mb-1 font-outfit group-hover:translate-x-1 transition-transform duration-300">{company}</h4>
+        <h4 className="text-purple font-bold text-lg mb-1 group-hover:translate-x-1 transition-transform duration-300">{company}</h4>
         <p className="text-text/90 font-medium text-sm mb-4 tracking-tight uppercase">{role}</p>
         <ul className="space-y-3">
           {points.map((point, i) => (

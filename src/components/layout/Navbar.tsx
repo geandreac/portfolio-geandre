@@ -22,7 +22,7 @@ export const Navbar: React.FC = () => {
             <div className="absolute w-[16px] h-[16px] top-0 left-0 border-2 border-purple" />
             <div className="absolute w-[16px] h-[16px] bottom-0 right-0 border-2 border-purple" />
           </div>
-          <span className="font-outfit tracking-wider uppercase text-xs">Geandre</span>
+          <span className=" tracking-wider uppercase text-xs">Geandre</span>
         </a>
         
         {/* Desktop Menu */}

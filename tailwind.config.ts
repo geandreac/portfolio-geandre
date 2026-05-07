@@ -20,9 +20,8 @@ const config: Config = {
         purple2: '#a855f7',
       },
       fontFamily: {
-        sans: ['"Inter"', '"Outfit"', 'sans-serif'],
+        sans: ['"JetBrains Mono"', 'monospace'],
         mono: ['"JetBrains Mono"', 'monospace'],
-        outfit: ['"Outfit"', 'sans-serif'],
       },
       backgroundImage: {
         'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01))',

@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
                 <div className="absolute w-[13px] h-[13px] top-0 left-0 border-2 border-purple" />
                 <div className="absolute w-[13px] h-[13px] bottom-0 right-0 border-2 border-purple" />
              </div>
-             <span className="font-outfit uppercase tracking-wider">Geandre</span>
+             <span className=" uppercase tracking-wider">Geandre</span>
           </div>
           <p className="text-sm text-muted font-medium">Desenvolvedor de Sistemas Full-stack</p>
         </div>

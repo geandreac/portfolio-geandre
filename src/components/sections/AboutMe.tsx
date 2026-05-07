@@ -8,7 +8,7 @@ export const AboutMe: React.FC = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div className="space-y-6 text-sm md:text-base text-muted leading-[1.85]">
-          <p className="text-text font-semibold font-outfit text-lg">Olá, sou o Geandre!</p>
+          <p className="text-text font-semibold text-lg">Olá, sou o Geandre!</p>
           <p>
             Sou desenvolvedor com experiência prática em ambientes corporativos reais. 
             Atuo na intersecção entre desenvolvimento de software e melhoria de processos.

@@ -22,7 +22,7 @@ export const SkillTable: React.FC<SkillTableProps> = ({ skills }) => {
           transition={{ delay: idx * 0.1 }}
           className="bg-bg border border-white/5 p-6 rounded-sm group hover:border-purple/30 transition-all duration-300 shadow-lg shadow-black/20"
         >
-          <h4 className="text-xs font-bold text-text mb-5 uppercase tracking-widest border-b border-white/5 pb-2 group-hover:text-purple transition-colors font-outfit">
+          <h4 className="text-xs font-bold text-text mb-5 uppercase tracking-widest border-b border-white/5 pb-2 group-hover:text-purple transition-colors">
             {category.title}
           </h4>
           <div className="flex flex-wrap gap-2">

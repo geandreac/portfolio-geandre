@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl lg:text-6xl font-bold leading-tight text-center md:text-left text-text font-outfit mb-6"
+            className="text-4xl lg:text-6xl font-bold leading-tight text-center md:text-left text-text mb-6"
           >
             Geandre é um <br className="hidden lg:block" />
             <span className="text-purple">desenvolvedor</span> de sistemas <br className="hidden lg:block" />

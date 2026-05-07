@@ -56,7 +56,7 @@ export const Contacts: React.FC = () => {
       </div>
       
       <div id="all-media">
-        <h3 className="text-xl font-bold text-text mb-6 font-outfit">
+        <h3 className="text-xl font-bold text-text mb-6">
           <span className="text-purple">#</span>all-media
         </h3>
         <div className="flex flex-wrap gap-4">
