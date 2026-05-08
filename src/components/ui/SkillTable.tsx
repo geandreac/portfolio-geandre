@@ -2,15 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 interface SkillCategory {
-  title: string;
+  title: { pt: string; en: string };
   items: string[];
 }
 
 interface SkillTableProps {
   skills: SkillCategory[];
+  language: 'pt' | 'en';
 }
 
-export const SkillTable: React.FC<SkillTableProps> = ({ skills }) => {
+export const SkillTable: React.FC<SkillTableProps> = ({ skills, language }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {skills.map((category, idx) => (
@@ -23,7 +24,7 @@ export const SkillTable: React.FC<SkillTableProps> = ({ skills }) => {
           className="bg-bg border border-white/5 p-6 rounded-sm group hover:border-purple/30 transition-all duration-300 shadow-lg shadow-black/20"
         >
           <h4 className="text-xs font-bold text-text mb-5 uppercase tracking-widest border-b border-white/5 pb-2 group-hover:text-purple transition-colors">
-            {category.title}
+            {category.title[language]}
           </h4>
           <div className="flex flex-wrap gap-2">
             {category.items.map((item, i) => (

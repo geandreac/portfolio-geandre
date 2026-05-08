@@ -1,22 +1,29 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useScrollSpy } from '../../hooks/useScrollSpy';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const activeSection = useScrollSpy(['home', 'works', 'skills', 'about-me', 'contacts']);
+  const { language, setLanguage, t } = useLanguage();
+  const activeSection = useScrollSpy(['home', 'works', 'skills', 'about-me', 'experience', 'contacts']);
 
   const navLinks = [
-    { id: 'home', label: 'home' },
-    { id: 'works', label: 'works' },
-    { id: 'skills', label: 'skills' },
-    { id: 'about-me', label: 'about' },
-    { id: 'contacts', label: 'contact' }
+    { id: 'home', label: t('nav.home') },
+    { id: 'works', label: t('nav.works') },
+    { id: 'skills', label: t('nav.skills') },
+    { id: 'about-me', label: t('nav.about') },
+    { id: 'experience', label: t('exp.title') },
+    { id: 'contacts', label: t('nav.contact') }
   ];
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'pt' ? 'en' : 'pt');
+  };
 
   return (
     <>
-      <nav className="fixed top-0 left-0 lg:left-[48px] right-0 h-[64px] bg-bg3/90 backdrop-blur-xl border-b border-white/5 flex items-center justify-between px-6 lg:px-12 z-[1000]">
+      <nav className="fixed top-0 left-0 lg:left-[48px] right-0 h-[64px] bg-bg3/90 backdrop-blur-xl border-b border-white/5 flex items-center justify-between px-5 md:px-10 lg:px-16 z-[1000]">
         <a href="#home" className="flex items-center gap-3 text-text font-bold text-sm group relative z-[1001]">
           <div className="w-[24px] h-[24px] relative flex-shrink-0 group-hover:rotate-12 transition-transform duration-300">
             <div className="absolute w-[16px] h-[16px] top-0 left-0 border-2 border-purple" />
@@ -26,25 +33,36 @@ export const Navbar: React.FC = () => {
         </a>
         
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 items-center">
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              <a 
-                href={`#${link.id}`}
-                className={`text-[12px] uppercase tracking-widest font-bold transition-all duration-300 hover:text-purple relative group ${activeSection === link.id ? 'text-purple' : 'text-muted'}`}
-              >
-                <span className="text-purple mr-1 opacity-50 group-hover:opacity-100 transition-opacity">#</span>
-                {link.label}
-                {activeSection === link.id && (
-                  <motion.div 
-                    layoutId="activeNav"
-                    className="absolute -bottom-1 left-0 right-0 h-[2px] bg-purple" 
-                  />
-                )}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex gap-12 items-center">
+          <ul className="flex gap-8 items-center">
+            {navLinks.map((link) => (
+              <li key={link.id}>
+                <a 
+                  href={`#${link.id}`}
+                  className={`text-[12px] uppercase tracking-widest font-bold transition-all duration-300 hover:text-purple relative group ${activeSection === link.id ? 'text-purple' : 'text-muted'}`}
+                >
+                  <span className="text-purple mr-1 opacity-50 group-hover:opacity-100 transition-opacity">#</span>
+                  {link.label}
+                  {activeSection === link.id && (
+                    <motion.div 
+                      layoutId="activeNav"
+                      className="absolute -bottom-1 left-0 right-0 h-[1px] bg-purple" 
+                    />
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <button 
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 px-3 py-1.5 border border-white/10 rounded-sm hover:border-purple/50 transition-all duration-300 group"
+          >
+            <span className={`text-[10px] font-bold uppercase tracking-wider ${language === 'en' ? 'text-purple' : 'text-muted'}`}>EN</span>
+            <div className="w-[1px] h-3 bg-white/10" />
+            <span className={`text-[10px] font-bold uppercase tracking-wider ${language === 'pt' ? 'text-purple' : 'text-muted'}`}>PT</span>
+          </button>
+        </div>
 
         {/* Mobile Toggle Button */}
         <button 
@@ -80,10 +98,10 @@ export const Navbar: React.FC = () => {
             <ul className="flex flex-col gap-10 items-center">
               {navLinks.map((link, i) => (
                 <motion.li 
-                  key={link.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
+                   key={link.id}
+                   initial={{ opacity: 0, y: 20 }}
+                   animate={{ opacity: 1, y: 0 }}
+                   transition={{ delay: i * 0.1 }}
                 >
                   <a 
                     href={`#${link.id}`}

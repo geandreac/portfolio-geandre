@@ -13,7 +13,7 @@ export const WhatsAppButton: React.FC = () => {
       whileTap={{ scale: 0.9 }}
       transition={{ type: 'spring', stiffness: 260, damping: 20 }}
       className="fixed bottom-8 right-8 z-[999] w-14 h-14 bg-purple rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(192,132,252,0.4)] transition-all duration-300 group"
-      title="Fale comigo no WhatsApp"
+      title="Fale comigo no WhatsApp (+55)"
     >
       <div className="absolute inset-0 rounded-full bg-purple animate-ping opacity-20" />
       <svg 

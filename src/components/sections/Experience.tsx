@@ -1,25 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SectionHeading } from '../ui/SectionHeading';
 import { TimelineItem } from '../ui/TimelineItem';
 import { experience } from '../../data/experience';
+import { useLanguage } from '../../context/LanguageContext';
+import { SectionHeading } from '../ui/SectionHeading';
 
 export const Experience: React.FC = () => {
+  const { t, language } = useLanguage();
+
   return (
-    <section id="experience" className="py-20 px-6 lg:px-12 mx-auto max-w-[960px]">
-      <SectionHeading id="experience" />
+    <section id="experience" className="py-24 px-5 md:px-10 lg:px-16 mx-auto max-w-[1100px]">
+      <SectionHeading id="experience" title={t('exp.title')} />
       
       <motion.div 
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        variants={{
-          visible: { transition: { staggerChildren: 0.1 } }
-        }}
-        className="mt-8"
+        className="relative border-l-2 border-purple/20 ml-3 py-4 space-y-12"
       >
-        {experience.map((item, i) => (
-          <TimelineItem key={i} {...item} />
+        {experience.map((item, idx) => (
+          <TimelineItem key={idx} {...item} language={language} />
         ))}
       </motion.div>
     </section>

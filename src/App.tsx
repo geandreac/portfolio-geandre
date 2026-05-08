@@ -9,11 +9,15 @@ import { Skills } from './components/sections/Skills';
 import { Experience } from './components/sections/Experience';
 import { Contacts } from './components/sections/Contacts';
 import { WhatsAppButton } from './components/ui/WhatsAppButton';
+import { ProgressBar } from './components/ui/ProgressBar';
+import { CustomCursor } from './components/ui/CustomCursor';
 import './styles/globals.css';
 
 const App: React.FC = () => {
   return (
     <div className="bg-bg min-h-screen text-text font-mono selection:bg-purple/30 selection:text-purple">
+      <CustomCursor />
+      <ProgressBar />
       <Sidebar />
       <Navbar />
       

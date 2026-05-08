@@ -1,6 +1,8 @@
-import React from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const Footer: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-bg3 border-t border-white/5 mt-24">
       <div className="max-w-[960px] mx-auto px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -12,11 +14,11 @@ export const Footer: React.FC = () => {
              </div>
              <span className=" uppercase tracking-wider">Geandre</span>
           </div>
-          <p className="text-sm text-muted font-medium">Desenvolvedor de Sistemas Full-stack</p>
+          <p className="text-sm text-muted font-medium">{t('footer.role')}</p>
         </div>
         
         <div className="md:text-right">
-          <h4 className="text-xs text-text font-bold mb-5 uppercase tracking-widest opacity-80">Redes profissionais</h4>
+          <h4 className="text-xs text-text font-bold mb-5 uppercase tracking-widest opacity-80">{t('contact.social')}</h4>
           <div className="flex gap-6 md:justify-end">
             <a 
               href="https://github.com/geandreac" 
@@ -43,7 +45,7 @@ export const Footer: React.FC = () => {
       </div>
       
       <div className="border-t border-white/5 py-6 text-center">
-        <p className="text-[11px] text-muted tracking-widest uppercase">© Copyright 2026. Designed & Developed by Geandre</p>
+        <p className="text-[11px] text-muted tracking-widest uppercase">{t('footer.copy')}</p>
       </div>
     </footer>
   );

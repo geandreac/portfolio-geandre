@@ -36,14 +36,12 @@ export const Sidebar: React.FC = () => {
       </a>
       
       <a 
-        href="https://cardwise-eight.vercel.app/" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        title="Projeto Live"
+        href="mailto:geandreac.dev@gmail.com" 
+        title="E-mail"
         className="text-muted hover:text-purple transition-all duration-300 hover:scale-110"
       >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-[18px] h-[18px]">
-          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
         </svg>
       </a>
 
