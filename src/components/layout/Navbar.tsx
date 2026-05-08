@@ -64,25 +64,36 @@ export const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Toggle Button */}
-        <button 
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden relative z-[1001] w-8 h-8 flex flex-col items-center justify-center gap-1.5"
-          aria-label="Toggle Menu"
-        >
-          <motion.span 
-            animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
-            className="w-6 h-[2px] bg-text block"
-          />
-          <motion.span 
-            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="w-6 h-[2px] bg-text block"
-          />
-          <motion.span 
-            animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
-            className="w-6 h-[2px] bg-text block"
-          />
-        </button>
+        {/* Mobile Actions */}
+        <div className="md:hidden flex items-center gap-4 relative z-[1001]">
+          <button 
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 px-2 py-1 border border-white/10 rounded-sm hover:border-purple/50 transition-all duration-300"
+          >
+            <span className={`text-[10px] font-bold uppercase tracking-wider ${language === 'en' ? 'text-purple' : 'text-muted'}`}>EN</span>
+            <div className="w-[1px] h-3 bg-white/10" />
+            <span className={`text-[10px] font-bold uppercase tracking-wider ${language === 'pt' ? 'text-purple' : 'text-muted'}`}>PT</span>
+          </button>
+
+          <button 
+            onClick={() => setIsOpen(!isOpen)}
+            className="w-8 h-8 flex flex-col items-center justify-center gap-1.5"
+            aria-label="Toggle Menu"
+          >
+            <motion.span 
+              animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+              className="w-6 h-[2px] bg-text block"
+            />
+            <motion.span 
+              animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+              className="w-6 h-[2px] bg-text block"
+            />
+            <motion.span 
+              animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+              className="w-6 h-[2px] bg-text block"
+            />
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Overlay Menu */}
