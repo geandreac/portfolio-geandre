@@ -73,10 +73,10 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="mt-12 md:mt-16 lg:mt-24 flex items-center gap-4 group cursor-default"
+          className="mt-12 md:mt-16 lg:mt-24 flex items-center justify-center md:justify-start gap-4 group cursor-default"
         >
           <div className="w-4 h-4 bg-purple animate-pulse" />
-          <p className="text-xs uppercase tracking-[0.3em] font-bold text-muted group-hover:text-purple transition-colors">
+          <p className="text-xs uppercase tracking-[0.3em] font-bold text-muted group-hover:text-purple transition-colors text-center md:text-left">
             {t('hero.status')} <span className="text-text">{latestProject ? latestProject.name : 'Aliança Navegação'}</span>
           </p>
         </motion.div>
