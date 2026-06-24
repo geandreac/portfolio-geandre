@@ -13,6 +13,25 @@ export interface ProjectItem {
 
 export const completeApps: ProjectItem[] = [
   {
+    name: 'Barbearia SaaS',
+    stack: ['Next.js 14', 'FastAPI', 'PostgreSQL', 'Tailwind'],
+    desc: {
+      pt: 'Sistema completo de gestão para barbearias (Em andamento). Integrado com pagamentos AsaaS e arquitetura escalável.',
+      en: 'Complete barbershop management system (Work in progress). Integrated with AsaaS payments and scalable architecture.'
+    },
+    descLong: {
+      pt: 'Um SaaS end-to-end projetado para a gestão completa de barbearias, atualmente em desenvolvimento. A arquitetura divide-se em um frontend moderno com Next.js 14 e Tailwind CSS, e um backend robusto em Python com FastAPI e PostgreSQL. Inclui integrações com AsaaS para pagamentos e CI/CD completo com GitHub Actions.',
+      en: 'An end-to-end SaaS designed for complete barbershop management, currently in development. The architecture is split into a modern frontend with Next.js 14 and Tailwind CSS, and a robust Python backend with FastAPI and PostgreSQL. It includes AsaaS integrations for payments and full CI/CD with GitHub Actions.'
+    },
+    note: {
+      pt: 'Projeto SaaS | Em Andamento',
+      en: 'SaaS Project | Work in Progress'
+    },
+    status: 'development',
+    linkLabel: 'Em breve <~>',
+    addedAt: '2024-06-24',
+  },
+  {
     name: 'CardWise',
     stack: ['Next.js 14', 'TypeScript', 'Supabase', 'Tailwind'],
     desc: {
