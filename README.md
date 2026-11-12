@@ -84,3 +84,12 @@ src/
 <p align="center">
   Desenvolvido por Geandre Alfaia
 </p>
+
+## Como clonar
+
+```bash
+git clone https://github.com/geandreac/portfolio-geandre.git
+cd portfolio-geandre
+npm install
+npm run dev      # Vite em http://localhost:5173
+```
