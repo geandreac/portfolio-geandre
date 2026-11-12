@@ -103,7 +103,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, la
                        rel="noopener noreferrer"
                        className="px-6 py-3 bg-purple text-bg text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all flex items-center gap-2 group cursor-pointer"
                      >
-                       {project.linkLabel || 'Acessar'}
+                       {project.linkLabel ? project.linkLabel[language] : (language === 'pt' ? 'Acessar' : 'Access')}
                        <span className="group-hover:translate-x-1 transition-transform">→</span>
                      </a>
                    ) : null}

@@ -4,28 +4,28 @@ export interface SkillCategory {
 }
 
 export const skills: SkillCategory[] = [
-  { 
+  {
     title: { pt: 'Linguagens', en: 'Languages' },
-    items: ['JavaScript', 'TypeScript', 'Python', 'C / C++'] 
+    items: ['TypeScript', 'JavaScript', 'Python', 'C#', 'SQL']
   },
-  { 
-    title: { pt: 'Frontend', en: 'Frontend' },
-    items: ['React.js', 'Next.js 14', 'TailwindCSS', 'HTML5 CSS3'] 
+  {
+    title: { pt: 'Frontend & Desktop', en: 'Frontend & Desktop' },
+    items: ['React.js', 'Next.js', 'TailwindCSS', 'PWA', '.NET 8 / WPF', 'Electron']
   },
-  { 
+  {
     title: { pt: 'Backend', en: 'Backend' },
-    items: ['Node.js', 'Express / JWT', 'Supabase'] 
+    items: ['Node.js / Express', 'FastAPI', 'WebSocket / WebRTC', 'Prisma']
   },
-  { 
+  {
     title: { pt: 'Dados & BI', en: 'Data & BI' },
-    items: ['Power BI', 'SQL Server', 'SQL'] 
+    items: ['PostgreSQL', 'Supabase (RLS)', 'SQL Server', 'Power BI']
   },
-  { 
-    title: { pt: 'Ferramentas', en: 'Tools' },
-    items: ['Git / GitHub', 'Vercel', 'IA para Produtividade', 'Automação de Processos'] 
+  {
+    title: { pt: 'Ferramentas & Testes', en: 'Tools & Testing' },
+    items: ['Git / GitHub Actions', 'Vercel', 'Docker', 'Playwright', 'Vitest', 'IA (Gemini / Groq)']
   },
-  { 
+  {
     title: { pt: 'Microsoft', en: 'Microsoft' },
-    items: ['Power Apps', 'Power Automate', 'SharePoint', 'Graph API'] 
+    items: ['Power Apps', 'Power Automate', 'SharePoint', 'Graph API']
   },
 ];
