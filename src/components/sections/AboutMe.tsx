@@ -22,8 +22,20 @@ export const AboutMe: React.FC = () => {
               {t('about.p2')}
             </p>
           </div>
-          
-          <div className="pt-8 flex flex-wrap gap-4">
+
+          <div className="space-y-4">
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-purple">{t('about.services')}</h4>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[1, 2, 3, 4].map(n => (
+                <li key={n} className="border border-white/5 bg-bg2/40 p-5 space-y-2">
+                  <p className="text-sm font-bold text-text">{t(`about.s${n}.title`)}</p>
+                  <p className="text-xs text-muted leading-relaxed">{t(`about.s${n}.desc`)}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="pt-4 flex flex-wrap gap-4">
              <a 
                href="#contacts" 
                className="px-8 py-3 bg-purple text-bg font-bold uppercase tracking-widest hover:brightness-110 transition-all duration-300 text-xs"

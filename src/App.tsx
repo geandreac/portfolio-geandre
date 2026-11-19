@@ -1,4 +1,5 @@
 import React from 'react';
+import { MotionConfig } from 'framer-motion';
 import { Sidebar } from './components/layout/Sidebar';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
@@ -15,6 +16,7 @@ import './styles/globals.css';
 
 const App: React.FC = () => {
   return (
+    <MotionConfig reducedMotion="user">
     <div className="bg-bg min-h-screen text-text font-mono selection:bg-purple/30 selection:text-purple">
       <CustomCursor />
       <ProgressBar />
@@ -36,6 +38,7 @@ const App: React.FC = () => {
 
       <WhatsAppButton />
     </div>
+    </MotionConfig>
   );
 };
 

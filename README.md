@@ -4,7 +4,7 @@
   <img src="./public/preview.png" alt="Portfolio Preview" width="800" style="border-radius: 10px; border: 1px solid rgba(255,255,255,0.1)">
   
   <p align="center">
-    <strong>Desenvolvedor de Sistemas Full-stack • Especialista em Experiências Digitais</strong>
+    <strong>Desenvolvedor Full-Stack • Especialista em IA</strong>
   </p>
 
   <p align="center">

@@ -14,8 +14,8 @@ export const experience: ExperienceItem[] = [
     isCurrent: true,
     company: 'Aliança Navegação e Transportes',
     role: {
-      pt: 'Jovem Aprendiz · Backoffice',
-      en: 'Apprentice · Backoffice'
+      pt: 'Backoffice',
+      en: 'Backoffice'
     },
     points: {
       pt: [
@@ -36,8 +36,8 @@ export const experience: ExperienceItem[] = [
     isCurrent: false,
     company: 'Metacon Construções',
     role: {
-      pt: 'Jovem Aprendiz · Gestão de Informações',
-      en: 'Apprentice · Information Management'
+      pt: 'Gestão de Informações',
+      en: 'Information Management'
     },
     points: {
       pt: [
@@ -56,8 +56,8 @@ export const experience: ExperienceItem[] = [
     isCurrent: false,
     company: 'MLobato Engenharia',
     role: {
-      pt: 'Estagiário · Suporte & TI',
-      en: 'IT Support Intern'
+      pt: 'Suporte & TI',
+      en: 'IT Support'
     },
     points: {
       pt: [
