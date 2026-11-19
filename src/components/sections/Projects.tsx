@@ -95,6 +95,16 @@ export const Projects: React.FC = () => {
 
           {grid(visible, filter)}
         </div>
+
+        <div className="border border-purple/30 bg-bg2/40 p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <p className="text-base md:text-lg font-bold text-text max-w-xl">{t('projects.cta.text')}</p>
+          <a
+            href="#contacts"
+            className="shrink-0 text-center px-8 py-3 bg-purple text-bg font-bold uppercase tracking-widest hover:brightness-110 transition-all duration-300 text-xs"
+          >
+            {t('projects.cta.button')}
+          </a>
+        </div>
       </div>
 
       <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} language={language} />

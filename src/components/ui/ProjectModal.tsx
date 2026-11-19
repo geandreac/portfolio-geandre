@@ -10,8 +10,8 @@ interface ProjectModalProps {
 }
 
 const LABELS = {
-  pt: { overview: 'Visão geral', role: 'Minha contribuição', features: 'Funcionalidades', architecture: 'Arquitetura e implementação', highlights: 'Diferenciais técnicos', stack: 'Tecnologias', close: 'Fechar', open: 'Acessar' },
-  en: { overview: 'Overview', role: 'My contribution', features: 'Features', architecture: 'Architecture & implementation', highlights: 'Technical highlights', stack: 'Technologies', close: 'Close', open: 'Open' },
+  pt: { overview: 'O problema', features: 'O que foi entregue', role: 'Meu papel', architecture: 'Como funciona por dentro', highlights: 'Qualidade e segurança', stack: 'Tecnologias usadas', close: 'Fechar', open: 'Acessar' },
+  en: { overview: 'The problem', features: 'What was delivered', role: 'My role', architecture: 'How it works inside', highlights: 'Quality & security', stack: 'Technologies used', close: 'Close', open: 'Open' },
 };
 
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
@@ -109,13 +109,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, la
                   <p className="text-sm text-muted leading-relaxed">{project.overview[language]}</p>
                 </Section>
               )}
+              {project.features && (
+                <Section title={L.features}><Bullets items={project.features[language]} /></Section>
+              )}
               {project.role && (
                 <Section title={L.role}>
                   <p className="text-sm text-muted leading-relaxed">{project.role[language]}</p>
                 </Section>
-              )}
-              {project.features && (
-                <Section title={L.features}><Bullets items={project.features[language]} /></Section>
               )}
               {project.architecture && (
                 <Section title={L.architecture}>
